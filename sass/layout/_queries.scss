@@ -1,0 +1,53 @@
+/* Min-width: 600px */
+
+@include bp-small {
+
+  html {
+    font-size: 22px;
+  }
+
+  .about-me {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .grid-item,
+  .grid-sizer {
+    width: 50%;
+  }
+
+}
+
+/* Min-width: 900px */
+
+@include bp-medium {
+
+  html {
+    font-size: 24px;
+  }
+
+  .project-image {
+    height: 300px;
+  }
+
+  .project-content {
+    padding: $base-gutter*2;
+  }
+
+}
+
+/* Min-width: 1200px */
+
+@include bp-large {
+
+  html {
+    font-size: 26px;
+  }
+
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+
+}

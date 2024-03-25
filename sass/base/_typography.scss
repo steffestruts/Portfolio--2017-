@@ -1,0 +1,38 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 900;
+}
+
+h1 { font-size: 1.476em; line-height: 1.043; margin-bottom: 1.043em; }
+h2 { font-size: 1.383em; line-height: 1.091; margin-bottom: 1.091em; }
+h3 { font-size: 1.296em; line-height: 1.200; margin-bottom: 1.200em; }
+h4 { font-size: 1.215em; line-height: 1.263; margin-bottom: 1.263em; }
+h5 { font-size: 1.138em; line-height: 1.333; margin-bottom: 1.333em; }
+h6 { font-size: 1.067em; line-height: 1.412; margin-bottom: 1.412em; }
+
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  a {
+    color: $malibu;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  i, em {
+    font-style: italic;
+  }
+  bold, strong {
+    font-weight: 900;
+  }
+}
+
+.container {
+  ol { list-style: upper-roman; }
+  ul { list-style: disc; }
+  ol, ul {
+    margin: 0 0 $base-rhythm $base-rhythm;
+    li {
+      display: list-item
+    }
+  }
+}

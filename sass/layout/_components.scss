@@ -1,0 +1,43 @@
+/* Clearfix */
+
+.clearfix {
+  *zoom: 1;
+  &:before, &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+/* Container */
+
+.container {
+  padding: 0 $base-gutter/2;
+}
+
+/* Buttons */
+
+.btn {
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: $base-spacing/3;
+  line-height: 1;
+  margin: 0 0.250em 0.250em 0;
+  padding: 0.75em 1.5em;
+  text-transform: uppercase;
+  &--external {
+    border: 0.063em solid lighten($mine-shaft, 20%);
+    color: lighten($mine-shaft, 20%);
+    transition: all ease-in-out .25s;
+    &:hover {
+      background: lighten($mine-shaft, 20%);
+      color: lighten($mine-shaft, 70%);
+    }
+    &:focus {
+      color: lighten($mine-shaft, 70%);
+    }
+  }
+}

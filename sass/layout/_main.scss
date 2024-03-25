@@ -1,0 +1,74 @@
+/* Body Setup */
+
+*,
+*:before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+body {
+  background: lighten($mine-shaft, 10%);
+  color: darken($white, 12%);
+  font: 300 1em/1.5 $main-font;
+}
+
+/* Masonry Grid */
+
+.grid {
+  &-item,
+  &-sizer {
+    width: 100%;
+  }
+}
+
+/* Zone */
+
+.zone {
+  margin-bottom: $base-rhythm;
+  &__title {
+    color: lighten($mine-shaft, 20%);
+    font-size: 3rem;
+    margin-bottom: $base-rhythm/2;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+/* Portfolio */
+
+.project {
+  background: lighten($mine-shaft, 6%);
+  font-size: 0.9rem;
+  margin: $base-gutter/2;
+  overflow: hidden;
+  &-content {
+    padding: $base-gutter;
+    &__title {
+      @extend h5;
+      color: $burnt-sienna;
+      letter-spacing: $base-spacing/3;
+      margin: 0;
+      word-wrap: break-word;
+      text-transform: uppercase;
+    }
+    &__subtitle {
+      @extend h6;
+      color: lighten($mine-shaft, 20%);
+      word-wrap: break-word;
+      text-transform: uppercase;
+    }
+  }
+  &-image {
+    background-color: lighten($mine-shaft, 4%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+}

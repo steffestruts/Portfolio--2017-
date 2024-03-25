@@ -1,0 +1,18 @@
+/* Top Part: Page-Header */
+
+.page-header {
+  .about-me {
+    padding: $base-gutter;
+    width: 100%;
+    &__image {
+      border: 15px solid lighten($mine-shaft, 6%);
+      border-radius: 50%;
+      display: block;
+      height: auto;
+      margin: $base-gutter auto;
+      max-height: 250px;
+      max-width: 250px;
+      width: 100%;
+    }
+  }
+}

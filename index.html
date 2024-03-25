@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hej! Det är jag som är Stefan. Och jag är en webbdesigner med ett brinnande teknikintresse.">
+    <meta name="google" content="notranslate">
+    <meta name="google-site-verification" content="aYC3PhQAN8N60uJv-X9xQYXlwuAerIlaLY7EB9--BBA">
+    <meta name="generator" content="visual studio code">
+    <title>Stefan Sjöberg</title>
+    <link rel="stylesheet" href="css/stylesheet.min.css">
+  </head>
+  <body>
+
+    <header class="page-header">
+      <div class="about-me">
+        <img src="img/profile.jpg" alt="jag" class="about-me__image">
+        <p>Hej! Det är jag som är <strong>Stefan</strong> och jag är en webbdesigner med ett intresse för det kreativa.</p>
+        <p><a href="mailto:&#104;&#101;&#108;&#108;&#111;&#064;&#115;&#116;&#101;&#102;&#097;&#110;&#115;&#106;&#111;&#098;&#101;&#114;&#103;&#046;&#110;&#101;&#116;">&#104;&#101;&#108;&#108;&#111;&#064;&#115;&#116;&#101;&#102;&#097;&#110;&#115;&#106;&#111;&#098;&#101;&#114;&#103;&#046;&#110;&#101;&#116;</a><br><a href="https://codepen.io/steffestruts/" target="_blank">codepen.io</a></p>
+      </div><!-- .about -->
+    </header><!-- .page-header -->
+
+    <div class="container">
+    <main class="page-main">
+      <section class="zone zone--project">
+        <h2 class="zone__title">Projekt</h2>
+        <div class="grid" data-masonry='{ "columnWidth": ".grid-sizer", "itemSelector": ".grid-item", "percentPosition": "true" }'>
+          <div class="grid-sizer"></div>
+          <!-- Project: Gräselefanterna -->
+          <div class="grid-item">
+          <article class="project">
+            <div class="project-image" style="background-image: url('img/portfolio03.jpg');"></div>
+            <div class="project-content">
+              <h3 class="project-content__title">Gräselefanterna</h3>
+              <h4 class="project-content__subtitle">Webb</h4>
+              <p>Gräselefanterna är eget projekt. Utgåva fyra av webbplatsen körs på Wordpress.</p>
+              <p>Wordpress hade jag arbetat lite med förut och det var ett självklart val för kunna ge andra ett enklare sätt att uppdatera om händelser.</p>
+              <p>Det mesta har designat själv så som plugins och det var för lära mig mer om Wordpress samt ha lite mer kontroll över vad som laddas på sidan.</p>
+              <a href="http://gräselefanterna.se/" target="_blank" class="btn btn--external">Besök projekt</a>
+            </div>
+          </article><!-- .project -->
+          </div><!-- .grid-item -->
+
+          <!-- Project: Hampeveckan -->
+          <div class="grid-item">
+          <article class="project">
+            <div class="project-image" style="background-image: url('img/portfolio02.jpg');"></div>
+            <div class="project-content">
+              <h3 class="project-content__title">Hampeveckan</h3>
+              <h4 class="project-content__subtitle">Webb</h4>
+              <p>En webbplats åt ungdomslägret Hampeveckan som arrangeras av Betaniaförsamlingen Odensbacken.</p>
+              <p>Jag behöll strukturen och la till ny design och bättre meny med stöd för mobila enheter.</p>
+              <p><a href="http://www.sennerstammedia.se/" target="_blank">Pontus Sennerstam</a> såg till så jag hade material att arbeta med. Vilket jag uppskattade.</p>
+              <a href="http://hampeveckan.nu" target="_blank" class="btn btn--external">Besök projekt</a>
+            </div>
+          </article><!-- .project -->
+          </div><!-- .grid-item -->
+
+          <!-- Project: Nattinnebandy -->
+          <div class="grid-item">
+          <article class="project">
+            <div class="project-image" style="background-image: url('img/portfolio01.jpg');"></div>
+            <div class="project-content">
+              <h3 class="project-content__title">Nattinnebandy</h3>
+              <h4 class="project-content__subtitle">Webb</h4>
+              <p>En väldigt enkel webbplats som ska förutse med all nödvändig information om kommande evengemang.</p>
+              <a href="http://nattinnebandy.se" target="_blank" class="btn btn--external">Besök projekt</a>
+            </div>
+          </article><!-- .project -->
+          </div><!-- .grid-item -->
+
+        </div><!-- .grid -->
+      </section><!-- .zone -->
+    </main><!-- .page-main -->
+    </div><!-- .container -->
+
+    <!-- Web Font Loader -->
+    <script>
+      WebFontConfig = {
+          google: { families: [ 'Source+Sans+Pro:300,300i,900' ] }
+      };
+      (function(d) {
+          var wf = d.createElement('script'), s = d.scripts[0];
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js';
+          s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+
+    <!-- Masonry Grid -->
+    <script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+    <script>
+      var msnry = new Masonry( '.grid', {
+        columnWidth: '.grid-sizer',
+        itemSelector: '.grid-item',
+        percentPosition: true
+      });
+    </script>
+
+  </body>
+</html>
